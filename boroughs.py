@@ -175,5 +175,6 @@ def correlate_data(file1,file2,output_file):
     fhandler = open(filepath,'w')
     
     jdata = json.dumps(restaurants_markets)
-
-    return restaurants_markets 
+    fhandler.write(jdata)
+    
+    fhandler.close()
